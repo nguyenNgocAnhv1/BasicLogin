@@ -1,0 +1,43 @@
+@model App.Models.Summernote
+@if (Model.loadLib)
+{
+     <script src="~/lib/summernote/summernote-bs5.js"></script>
+     <link rel="stylesheet" href="~/lib/summernote/summernote-bs5.css">
+     @* File manage *@
+     @* <link rel="stylesheet" href="~/lib/jqueryui/themes/base/theme.css" />
+     <link rel="stylesheet" href="~/lib/jqueryui/themes/base/jquery-ui.css" />
+     <link rel="stylesheet" href="~/lib/elfinder/css/elfinder.full.css" />
+     <link rel="stylesheet" href="~/lib/elfinder/css/theme.min.css" />
+     <link rel="stylesheet" href="~/css/elfinder-material-theme/Material/css/theme-gray.css" />
+
+     <script src="~/lib/jqueryui/jquery-ui.min.js"></script>
+     <script src="~/lib/elfinder/js/elfinder.min.js"></script> *@
+
+
+}
+<script>
+
+     $(document).ready(function () {
+
+          $("#@Model.IdEditor").summernote({
+               height: @Model.height,
+               @* toolbar: [
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']],
+               ] *@
+          });
+          let buttons = $('.note-editor button[data-toggle="dropdown"]');
+
+          buttons.each((key, value) => {
+               $(value).on('click', function (e) {
+                    $(this).attr('data-bs-toggle', 'dropdown')
+                    console.log()
+                    ata('id', 'dropdownMenu');
+               })
+          })
+     });
+</script>
