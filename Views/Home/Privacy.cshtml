@@ -10,4 +10,14 @@
      var SummerNote = new App.Models.Summernote("Content", true, 500);
 
 }
+<a asp-action="LoginGoogle" asp-controller="Home">Login</a>
+<ul>
+    @if (Context.User.Identity.IsAuthenticated)
+    {
+        <li>Hello @User.Identity.Name</li>
+        <li>
+            <a asp-action="Logout" asp-controller="Home">Logout</a>
+        </li>
+    }
+</ul>
 <partial name="_Summernote" model="SummerNote" />

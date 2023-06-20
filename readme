@@ -4,3 +4,11 @@ dotnet add package  Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package  Microsoft.EntityFrameworkCore.Tools                 
 dotnet add package  Microsoft.VisualStudio.Web.CodeGeneration.Design    
                                        
+
+
+- Login by google 
+1. thêm thư viện: Microsoft.AspNetCore.Authentication.Google
+2. Cấu hình 1 số thông tin trong program
+3. 1 số phương thức trong login
+4. chú ý fix bug Correlation failed 
+https://www.youtube.com/watch?v=YmxtJ5euiSo&t=75s

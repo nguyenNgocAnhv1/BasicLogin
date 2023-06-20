@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = app
 build_property.RootNamespace = app
-build_property.ProjectDir = D:\CNTT\Net\DotNetWeb\DotnetTemplate\BasicLogin\App\
+build_property.ProjectDir = d:\CNTT\Net\DotNetWeb\Ngich\BasicLoginGoogl\BasicLogin\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\CNTT\Net\DotNetWeb\DotnetTemplate\BasicLogin\App
+build_property.MSBuildProjectDirectory = d:\CNTT\Net\DotNetWeb\Ngich\BasicLoginGoogl\BasicLogin
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/Account/Login.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/Account/Register.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/Home/Index.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/Home/Privacy.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/Shared/Error.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/Shared/_Summernote.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/Shared/_Summernote.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdW1tZXJub3RlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/_ViewImports.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/_ViewStart.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNTT/Net/DotNetWeb/DotnetTemplate/BasicLogin/App/Views/Shared/_Layout.cshtml]
+[d:/CNTT/Net/DotNetWeb/Ngich/BasicLoginGoogl/BasicLogin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-uwi58k5n9p
