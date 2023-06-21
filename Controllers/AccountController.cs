@@ -1,6 +1,7 @@
 ﻿using App.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System.Security.Cryptography;
 
 namespace App.Controllers
@@ -8,9 +9,15 @@ namespace App.Controllers
      public class AccountController : BaseController
      {
           private readonly AppDbContext _context;
-          public AccountController(AppDbContext context)
+          private readonly ISendMailService _sendmailservice;
+          IOptions<MailSettings> _mailSettings;
+          ILogger<SendMailService> _logger;
+          public AccountController(AppDbContext context, ISendMailService sendmailservice, IOptions<MailSettings> mailSettings, ILogger<SendMailService> logger)
           {
                _context = context;
+               _sendmailservice = sendmailservice;
+                _mailSettings = mailSettings;
+               _logger = logger;
           }
           public IActionResult Login()
           {
@@ -72,6 +79,24 @@ namespace App.Controllers
                CurrentUser = "";
                return RedirectToAction("Login");
           }
+          public async Task<IActionResult> SendMail()
+          {
+               // var sendmailservice = context.RequestServices.GetService<ISendMailService>();
+
+              agc.a(_mailSettings.Value.DisplayName);
+               SendMailService s = new SendMailService(_mailSettings, _logger);
+
+               MailContent content = new MailContent
+               {
+                    To = "keyhmast1@gmail.com",
+                    Subject = "Kiểm tra thử hay v",
+                    Body = "<p><strong>Xin chào xuanthulab.net</strong></p>"
+               };
+               await s.SendMail(content);
+               // await _sendmailservice.SendMail(content);
+               return Content("Send mail");
+          }
      }
+
 
 }

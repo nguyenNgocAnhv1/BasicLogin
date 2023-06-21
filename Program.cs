@@ -1,3 +1,4 @@
+using App;
 using App.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -27,7 +28,10 @@ builder.Services.AddSession(o =>
      o.Cookie.HttpOnly = true;
      o.Cookie.IsEssential = true;
 });
-
+// add mail
+builder.Services.AddOptions();
+builder.Services.Configure<MailSettings> (builder.Configuration.GetSection("MailSettings"));
+builder.Services.AddTransient<ISendMailService, SendMailService>();
 // google
 builder.Services.AddAuthentication(option =>
 {
@@ -69,6 +73,20 @@ app.UseCookiePolicy(new CookiePolicyOptions()
 {
      MinimumSameSitePolicy = SameSiteMode.Lax
 });
+app.MapGet("/testmail", async context => {
+
+        // Lấy dịch vụ sendmailservice
+        var sendmailservice = context.RequestServices.GetService<ISendMailService>();
+
+        MailContent content = new MailContent {
+            To = "keyhmast1@gmail.com",
+            Subject = "Kiểm tra thử",
+            Body = "<p><strong>Xin chào xuanthulab.net</strong></p>"
+        };
+
+        await sendmailservice.SendMail(content);
+        await context.Response.WriteAsync("Send mail");
+    });
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

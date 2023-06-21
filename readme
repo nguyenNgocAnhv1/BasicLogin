@@ -12,3 +12,10 @@ dotnet add package  Microsoft.VisualStudio.Web.CodeGeneration.Design
 3. 1 số phương thức trong login
 4. chú ý fix bug Correlation failed 
 https://www.youtube.com/watch?v=YmxtJ5euiSo&t=75s
+
+- SendMail
+dotnet add package MailKit
+dotnet add package MimeKit
+1. Thêm file mail.cs
+2. cấu hình 1 số yêu cầu trong file program
+3. Có thể dùng mapget dẻ kiem tra luon
